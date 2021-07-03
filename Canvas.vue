@@ -377,7 +377,7 @@ export default {
         })
         .attr("fill", self.color());
       //增加节点的名字
-      self.nodes.append("title").text(d => d.name);
+      self.nodes.text("").append("title").text(d => d.name);
 
       //字没跟着走 ,因为文字层没更新
       //节点文本层
